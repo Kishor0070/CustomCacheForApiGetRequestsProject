@@ -15,7 +15,7 @@ public class LRUBlogCache {
     {
         this.maxCapacity = 4;
         this.curElements = 0;
-        this.map = new HashMap<>(50);
+        this.map = new HashMap<>(4);
         this.cacheList = new Node(-1, null);
         head = cacheList;
         head.next = new Node(-1,null);
